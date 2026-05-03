@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ИИ и генерирането на код | Курсова работа</title>
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <!-- Официални данни за университета -->
+                <div class="university-info">
+                    <p>УНИВЕРСИТЕТ: Русенски университет „Ангел Кънчев“</p>
+                    <p>ФАКУЛТЕТ: Природни науки и образование</p>
+                    <p>КАТЕДРА: Информатика и информационни технологии</p>
+                </div>
+        
+                <hr class="header-divider">
+        
+                <!-- Тип документ и Предмет -->
+                <div class="work-info">
+                    <p class="doc-type">КУРСОВА РАБОТА</p>
+                    <p>по: <strong>„Изкуствен интелект“</strong></p>
+                </div>
+
+                <!-- Тема -->
+                <h1>Как ИИ генерира код и доколко можем да му се доверим?</h1>
+        
+                <hr class="header-divider">
+
+                <!-- Лични данни на студента -->
+                <div class="student-info">
+                    <div class="student-column">
+                        <p>Изготвил: <strong>Мерт Межднун Мъстън</strong></p>
+                        <p>Специалност: „Софтуерно инженерство“</p>
+                    </div>
+                    <div class="student-column">
+                        <p>Факултетен №: 236267</p>
+                        <p>Група: 40А</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="container">
+                <a href="#intro">Увод</a>
+                <a href="#concepts">Технология</a>
+                <a href="#tools">Инструменти</a>
+                <a href="#analysis">Предимства и Рискове</a>
+                <a href="#trust">Доверието</a>
+                <a href="#sources">Източници</a>
+            </div>
+        </nav>
+
+        <main class="container">
+            <section id="intro">
+                <h2>Увод</h2>
+                <p>Навлизането на изкуствения интелект в софтуерната разработка не е просто нов тренд, а фундаментална промяна в начина, по който създаваме технологии. От помощник при писане на синтаксис до генериране на цялостни архитектури, ИИ се превръща в "третата ръка" на програмиста.</p>
+            </section>
+
+            <section id="concepts">
+                <h2>Основни понятия и технология</h2>
+                <div class="card">
+                    <p>В основата на генерацията на код стоят <strong>Големите езикови модели (LLMs)</strong>. Те работят на принципа на вероятностите – предсказват следващия токен (символ или дума) въз основа на контекста.</p>
+                    <ul>
+                        <li><strong>Tokenization:</strong> Разбиване на кода на части, които моделът разбира.</li>
+                        <li><strong>Attention Mechanism:</strong> Позволява на ИИ да разбира връзката между дефиницията на една променлива в началото на файла и нейното използване в края.</li>
+                        <li><strong>Datasets:</strong> Моделите са обучени върху терабайти отворен код (GitHub, Stack Overflow).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="tools">
+                <h2>Популярни приложения</h2>
+                <p>Към 2026 г. основните играчи на пазара включват:</p>
+                <div class="grid">
+                    <div class="item"><strong>GitHub Copilot:</strong> Най-разпространеният асистент, интегриран директно в IDE-то.</div>
+                    <div class="item"><strong>Cursor:</strong> ИИ-базиран редактор, който разбира целия контекст на проекта.</div>
+                    <div class="item"><strong>Claude 3.5/4:</strong> Известен с изключително ниските нива на логически грешки.</div>
+                </div>
+            </section>
+
+            <section id="analysis">
+                <h2>Предимства и ограничения</h2>
+                <p>Балансът между скорост и качество е ключов за разбирането на темата[cite: 1].</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Предимства</th>
+                            <th>Рискове и Ограничения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Автоматизация на повтарящи се задачи (Boilerplate)</td>
+                            <td><strong>Халюцинации:</strong> Генериране на код, който изглежда верен, но не работи.</td>
+                        </tr>
+                        <tr>
+                            <td>Бързо прототипиране на идеи</td>
+                            <td><strong>Сигурност:</strong> Риск от вмъкване на уязвимости (SQL инжекции и др.).</td>
+                        </tr>
+                        <tr>
+                            <td>Намаляване на прага за навлизане на нови кадри</td>
+                            <td><strong>Авторско право:</strong> Въпроси относно произхода на обучителните данни.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="trust">
+                <h2>Въпросът за доверието</h2>
+                <p>Доверието в ИИ трябва да бъде <strong>критично и информирано</strong>. Студентът или програмистът носи пълната отговорност за проверката на генерираното съдържание[cite: 1].</p>
+                <blockquote>
+                    "ИИ е мощен инструмент, но той е толкова добър, колкото е способността на човека да провери и валидира неговия изход."
+                </blockquote>
+            </section>
+
+            <section id="sources">
+                <h2>Използвани източници</h2>
+                <ul>
+                    <li>[1] Указания за разработка на курсова работа по ИИ ("usloviq_kursova.docx").</li>
+                    <li>GitHub Octoverse Report 2025.</li>
+                    <li>OpenAI - Technical documentation on Code Models.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Курсова работа по Изкуствен Интелект. Изработено със статичен HTML/CSS.</p>
+        </footer>
+
+    </body>
+</html>
