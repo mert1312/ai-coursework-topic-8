@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #0d6efd; /* Bootstrap Blue */
+    --dark-bg: #1e293b;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem; /* Малко по-голям за по-добра четимост на проектор */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Заглавия */
+h1, h2, h3, .navbar-brand, .doc-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Удебелен шрифт за тежест */
+    text-transform: none; /* Можеш да ползваш uppercase за по-агресивен тех-стил */
+}
+
+/* Специфична настройка за голямото заглавие */
+h1 {
+    letter-spacing: -1px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #1e293b 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.university-info {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.work-info {
+    margin-bottom: 30px;
+}
+
+section {
+    scroll-margin-top: 100px; /* Важно за навигацията */
+    padding: 40px 0;
+}
+
+strong, b {
+    font-weight: bold; /* Увери се, че това е тук */
+}
+
+/* Използваме Bootstrap класове за таблиците и картите, 
+   но тук можеш да добавиш фини настройки */
+h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+main p {
+    text-align: justify;
+    text-justify: inter-word; /* Помага за по-равномерни разстояния между думите */
+    margin-bottom: 1.5rem;   /* Добавя малко разстояние между параграфите за четимост */
+}
+
+/* Добавя разстояние между елементите в списъците */
+main li {
+    margin-bottom: 12px; /* Можеш да увеличиш тази стойност за още повече място */
+    line-height: 1.6;    /* Гарантира добра височина на самия ред */
+}
+
+/* Премахва излишното разстояние след последната точка в списъка */
+main li:last-child {
+    margin-bottom: 0;
+}
+
+main ul, main ol {
+    text-align: justify;
+}
+
+/* Cards & Elements */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.item p {
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+th, td { padding: 18px; text-align: left; border-bottom: 1px solid #f1f5f9; }
+th { background: var(--primary-color); color: white; }
+
+blockquote {
+    border-left: 5px solid var(--primary-color);
+    padding: 1rem 2rem;
+    background: #e9ecef;
+    font-style: italic;
+    border-radius: 0 10px 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #64748b;
+}
